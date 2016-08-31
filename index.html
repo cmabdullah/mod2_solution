@@ -32,44 +32,13 @@ p {
 
 
   margin-right: 10px;
-
   margin-left: 15px;
   font-family: Helvetica;
   color: white;
-
-
-
-
 }
 
 
 
-h4 {
-  border: 2px solid black;
-  background-color: gold;
-  width: 93%;
-  height: 150px;
-
-/**************padding***********/
-  padding-left: 15px;
-  padding-top: 25px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-
-
-
-
-
-  margin-right: 10px;
-
-  margin-left: 15px;
-  font-family: Helvetica;
-  color: white;
-
-
-
-
-}
 
 
 
@@ -167,15 +136,60 @@ h4 {
 }
 
 
+
+/********** small devices only **********/
+@media (min-width: 1px) and (max-width: 767px) {
+  .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-sd-1 {
+    width: 8.33%;
+  }
+  .col-sd-2 {
+    width: 16.66%;
+  }
+  .col-sd-3 {
+    width: 25%;
+  }
+  .col-sd-4 {
+    width: 33.33%;
+  }
+  .col-sd-5 {
+    width: 41.66%;
+  }
+  .col-sd-6 {
+    width: 50%;
+  }
+  .col-sd-7 {
+    width: 58.33%;
+  }
+  .col-sd-8 {
+    width: 66.66%;
+  }
+  .col-sd-9 {
+    width: 74.99%;
+  }
+  .col-sd-10 {
+    width: 83.33%;
+  }
+  .col-sd-11 {
+    width: 91.66%;
+  }
+  .col-sd-12 {
+    width: 100%;
+  }
+}
+
+
+
 h3 {
   width: 90px;
   height: 25px;
   border: 1px solid black;
   text-align: center;
 
-}
 
-#p1 {
   background-color: gray;
   float:right;
   margin-top: 0px;
@@ -186,8 +200,13 @@ h3 {
   border: 1px solid black;
 
 }
+/**
+#p1 {
+  
 
+}
 
+**/
 
 
 
@@ -197,9 +216,9 @@ h3 {
 <h1>Our menu</h1>
 
 <div class="row">
-  <div class="col-lg-4 col-md-6"><h3 id="p1">Chicken</h3><p>Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   </p></div>
-  <div class="col-lg-4 col-md-6"><h3 id="p1">Beef</h3><p>Item 2</p></div>
-  <div class="col-lg-4 col-md-12"><h3 id="p1">Sushi</h3><p>Item 3</p></div>
+  <div class="col-lg-4 col-md-6 col-sd-12"><h3>Chicken</h3><p>Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   Item 1   </p></div>
+  <div class="col-lg-4 col-md-6 col-sd-12"><h3>Beef</h3><p>Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 </p></div>
+  <div class="col-lg-4 col-md-12 col-sd-12"><h3>Sushi</h3><p>Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 </p></div>
 </div>
 </body>
 </html>
